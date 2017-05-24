@@ -148,8 +148,10 @@
                     <img class="n-logo" src="logo.png" alt="">
                     <h1 class="h1-seo">Indian Institutes of Technology Hyderabad</h1>
                     <h3>ENGINEERING SCIENCE</h3>
+                    <a href="javascript:void(0)" onclick="scrollTo1()"><img style="max-width: 60px" src="down.png" onclick=""></a>
                 </div>
-                <!-- <h6 class="category category-absolute">Designed by
+
+               <!--  <h6 class="category category-absolute">Designed by
                     <a href="http://invisionapp.com/" target="_blank">
                         <img src="./assets/img/invision-white-slim.png" class="invision-logo" />
                     </a>. Coded by
@@ -158,7 +160,7 @@
                     </a>.</h6> -->
             </div>
         </div>
-        <div class="main">
+        <div class="main" class="1">
         <!-- INTRODUCTION -->
 
                         <div class="section section-introduction">
@@ -397,6 +399,14 @@
         if ($('.wrapper').length != 0) {
             $("html, body").animate({
                 scrollTop: $('.wrapper').offset().top
+            }, 1000);
+        }
+    }
+    function scrollTo1() {
+
+        if ($('.section-introduction').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-introduction').offset().top
             }, 1000);
         }
     }
